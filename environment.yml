@@ -13,7 +13,6 @@ dependencies:
   - lightgbm
   - joblib
   - tqdm
-  - tqdm-joblib
 
   # Geospatial data and rasters
   - geopandas
@@ -53,3 +52,5 @@ dependencies:
   - pip:
       - kaggle          # Kaggle API client
       - earthpy         # extra geospatial utilities
+      - tqdm-joblib
+
