@@ -4,7 +4,7 @@ channels:
 dependencies:
   # Core
   - python=3.9
-
+  - ipykernel 
   # Scientific Python stack
   - numpy
   - pandas
@@ -54,4 +54,5 @@ dependencies:
       - kaggle          # Kaggle API client
       - earthpy         # extra geospatial utilities
       - tqdm-joblib
+      - py7zr
 
