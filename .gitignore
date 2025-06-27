@@ -1,8 +1,8 @@
-/data/raw/
-/data/processed/
 /results/
 /.env
 __pycache__/
 /.ipynb_checkpoints/
 *.pkl
 !data/raw/datasets.7z
+/data/raw/
+/data/processed/
