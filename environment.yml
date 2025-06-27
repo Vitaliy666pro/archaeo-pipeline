@@ -1,0 +1,55 @@
+name: archaeo
+channels:
+  - conda-forge
+dependencies:
+  # Core
+  - python=3.9
+
+  # Scientific Python stack
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn       # includes decomposition, preprocessing, metrics
+  - lightgbm
+  - joblib
+  - tqdm
+  - tqdm-joblib
+
+  # Geospatial data and rasters
+  - geopandas
+  - rasterio
+  - shapely
+  - pyproj
+  - richdem
+  - contextily
+  - geodatasets
+  - laspy              # for reading LiDAR point clouds (stage 5)
+
+  # Road network / graph analysis
+  - osmnx              # download/process street networks (stage 3.5)
+  - networkx           # graph analysis of roads
+
+  # Google Earth Engine
+  - earthengine-api
+
+  # Mapping & visualization
+  - matplotlib
+  - seaborn
+  - folium             # point & heatmap rendering on interactive maps (stage 7)
+
+  # Networking, I/O and utilities
+  - requests
+  - requests-oauthlib
+  - oauthlib
+  - python-dotenv
+  - fiona              # file format support for geopandas
+  - pyogrio            # faster IO for geopandas
+
+  # GPT-Vision / OpenAI
+  - openai
+
+  # pip-only packages
+  - pip
+  - pip:
+      - kaggle          # Kaggle API client
+      - earthpy         # extra geospatial utilities
