@@ -35,6 +35,7 @@ dependencies:
   - matplotlib
   - seaborn
   - folium             # point & heatmap rendering on interactive maps (stage 7)
+  - jupyterlab
 
   # Networking, I/O and utilities
   - requests

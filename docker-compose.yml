@@ -9,5 +9,5 @@ services:
       - ./results:/app/results
     ports:
       - "8888:8888"
-    environment:
-      - JUPYTER_TOKEN=secret-token
+    env_file:
+      - .env 
