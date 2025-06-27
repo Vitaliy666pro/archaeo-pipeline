@@ -1,0 +1,32 @@
+{
+    "mound_villages": {
+        "file": "mound_villages_acre.csv",
+        "description": "CSV of mound villages with UTM coordinates.",
+        "citation": "Source: Archaeological Institute, 2020"
+    },
+    "casarabe_sites": {
+        "file": "casarabe_sites_utm.csv",
+        "description": "CSV of Casarabe archaeological sites in UTM coordinates.",
+        "citation": "Source: Casarabe Survey Team, 2021"
+    },
+    "geoglyphs": {
+        "file": "amazon_geoglyphs_sites.csv",
+        "description": "Geoglyph sites in Amazon with latitude/longitude.",
+        "citation": "Jacobs, J. Q. (2023)"
+    },
+    "submit": {
+        "file": "submit.csv",
+        "description": "User-submitted archaeological survey predictions via GPT deep research.",
+        "citation": "Walker et al. PeerJ 2023"
+    },
+    "science_data": {
+        "file": "science.ade2541_data_s2.csv",
+        "description": "Science dataset of archaeological sites with lat/lon.",
+        "citation": "Science Data Repository, 2022"
+    },
+    "coords_prepared": {
+        "file": "coords_prepared.json",
+        "description": "Points collected via GPT deep-research query for archaeological objects in target countries.",
+        "citation": "Internal GPT DeepResearch 2025"
+    }
+}
