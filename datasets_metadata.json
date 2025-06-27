@@ -43,5 +43,15 @@
         "file": "major-tom-core-s2l1c-ssl4eo-amazonia-embeddings",
         "description": "Major-TOM Core S2L1C SSL4EO embeddings for Amazonia satellite imagery. https://www.kaggle.com/datasets/fnands/major-tom-core-s2l1c-ssl4eo-amazonia-embeddings/code",
         "citation": "Major-TOM/Core-S2L1C-SSL4EO (Hugging Face)."
+    },
+    "dem": {
+        "type": "url",
+        "source": "https://portal.opentopography.org/API/globaldem",
+        "description": "SRTM DEM data for elevation. NASA Shuttle Radar Topography Mission (SRTM)(2013). Shuttle Radar Topography Mission (SRTM) Global. Distributed by OpenTopography. https://doi.org/10.5069/G9445JDF. Accessed: 2025-06-09"
+    },
+    "gedi-data": {
+        "type": "file",
+        "source": "/kaggle/input/gedi-cluster0-2019-2021/gedi_cluster0_2019_2021.geojson",
+        "description": "Exported from Google Drive to Kaggle as dataset. Code snippet to download the data is shared in notebook. DOI: 10.5067/GEDI/GEDI02_A.002"
     }
 }
