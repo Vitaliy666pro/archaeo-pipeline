@@ -4,3 +4,7 @@ interim_data_dir: data/interim
 results_dir: results
 data_dir: data
 scripts_dir: scripts
+
+# Coordinate reference systems
+aoi_crs: EPSG:4326
+metric_crs: EPSG:3857
