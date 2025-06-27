@@ -16,5 +16,5 @@ ENV PATH /opt/conda/envs/archaeo/bin:$PATH
 # Copy all project files into the container
 COPY . /app
 
-# By default, launch JupyterLab on container start
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
+# Default command: start JupyterLab inside the archaeo env
+CMD ["conda", "run", "-n", "archaeo", "jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
