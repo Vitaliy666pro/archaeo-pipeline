@@ -3,6 +3,9 @@
 __pycache__/
 /.ipynb_checkpoints/
 *.pkl
+
 !data/raw/datasets.7z
-/data/raw/
+
+data/raw/*
+
 /data/processed/
