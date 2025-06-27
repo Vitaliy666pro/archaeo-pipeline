@@ -1,4 +1,3 @@
-# Use a minimal conda base image
 FROM continuumio/miniconda3
 
 # Set working directory
@@ -10,11 +9,11 @@ RUN conda install -y -n base -c conda-forge mamba && \
     mamba env create -f /tmp/environment.yml && \
     conda clean -afy
 
-# Make the new environment’s binaries available
-ENV PATH /opt/conda/envs/archaeo/bin:$PATH
-
-# Copy all project files into the container
+# Copy all project files into the image
 COPY . /app
 
-# Default command: start JupyterLab inside the archaeo env
-CMD ["conda", "run", "-n", "archaeo", "jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
+# Ensure environment binaries and conda are on PATH
+ENV PATH "/opt/conda/envs/archaeo/bin:/opt/conda/bin:$PATH"
+
+# Default entrypoint: run JupyterLab via conda-run in archaeo env
+ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "archaeo", "jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
