@@ -1,3 +1,4 @@
 raw_data_dir: data/raw
 interim_data_dir: data/interim
 results_dir: results
+data_dir: data
