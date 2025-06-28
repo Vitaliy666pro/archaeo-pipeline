@@ -16,7 +16,7 @@
     },
     "submit": {
         "file": "submit.csv",
-        "description": "User-submitted archaeological survey predictions via GPT deep research.",
+        "description": "archaeological survey predictions.",
         "citation": "Walker et al. PeerJ 2023"
     },
     "science_data": {
@@ -59,5 +59,12 @@
         "description": "Exported from Google Drive to Kaggle as dataset. Code snippet to download the data is shared in notebook.",
         "citation": "DOI: 10.5067/GEDI/GEDI02_A.002",
         "url": "https://www.kaggle.com/datasets/ceeluna/gedi-cluster0-2019-2021"
+    },
+    "soilgrids-0-5cm": {
+        "type": "raster",
+        "source": "/path/to/soilgrids_0_5cm/*.tif",
+        "description": "SoilGrids 2.0: global gridded soil information (250m resolution) for 0–5 cm depth. Includes clay fraction (%), pH in H2O, and Soil Organic Carbon (g/kg). Reprojected to EPSG:4326 for compatibility with tile centroids.",
+        "citation": "Poggio et al. (2021), SoilGrids 2.0: producing soil information for the globe with machine learning. Soil, 7, 217–240. https://doi.org/10.5194/soil-7-217-2021",
+        "url": "https://soilgrids.org"
     }
 }

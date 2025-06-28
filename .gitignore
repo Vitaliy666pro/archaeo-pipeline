@@ -9,3 +9,8 @@ __pycache__/
 data/raw/*
 
 /data/processed/
+data/
+*.pkl
+*.tif
+*.las
+*.parquet

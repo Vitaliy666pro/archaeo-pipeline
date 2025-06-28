@@ -8,3 +8,4 @@ scripts_dir: scripts
 # Coordinate reference systems
 aoi_crs: EPSG:4326
 metric_crs: EPSG:3857
+aoi_box : [-80.85832999999998, -28.60999999999999, -35.5853, 11.799999999999999]
