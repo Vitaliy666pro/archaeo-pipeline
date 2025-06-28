@@ -31,27 +31,33 @@
     },
     "hydrorivers": {
         "file": "HydroRIVERS.gdb",
-        "description": "Global river hydrography and network routing dataset. https://www.kaggle.com/datasets/ceeluna/hydrorivers-dataset",
-        "citation": "Lehner, B., Grill G. (2013). Hydrological Processes, 27(15):2171–2186."
+        "description": "Global river hydrography and network routing dataset.",
+        "citation": "Lehner, B., Grill G. (2013). Hydrological Processes, 27(15):2171–2186.",
+        "url": "https://www.kaggle.com/datasets/ceeluna/hydrorivers-dataset"
     },
     "lidar_amazon": {
         "file": "nasa-amazon-lidar-2008-2018",
-        "description": "LiDAR surveys over selected Amazon sites (2008–2018), processed into 1m DTMs. https://www.kaggle.com/datasets/fnands/nasa-amazon-lidar-2008-2018",
-        "citation": "NASA ORNL DAAC (2013). Shuttle Radar Topography Mission (SRTM) Global."
+        "description": "LiDAR surveys over selected Amazon sites (2008–2018), processed into 1m DTMs.",
+        "citation": "NASA ORNL DAAC (2013). Shuttle Radar Topography Mission (SRTM) Global.",
+        "url": "https://www.kaggle.com/datasets/fnands/nasa-amazon-lidar-2008-2018"
     },
     "embeddings": {
         "file": "major-tom-core-s2l1c-ssl4eo-amazonia-embeddings",
-        "description": "Major-TOM Core S2L1C SSL4EO embeddings for Amazonia satellite imagery. https://www.kaggle.com/datasets/fnands/major-tom-core-s2l1c-ssl4eo-amazonia-embeddings/code",
-        "citation": "Major-TOM/Core-S2L1C-SSL4EO (Hugging Face)."
+        "description": "Major-TOM Core S2L1C SSL4EO embeddings for Amazonia satellite imagery.",
+        "citation": "Major-TOM/Core-S2L1C-SSL4EO (Hugging Face).",
+        "url": "https://www.kaggle.com/datasets/fnands/major-tom-core-s2l1c-ssl4eo-amazonia-embeddings/code"
     },
     "dem": {
         "type": "url",
         "source": "https://portal.opentopography.org/API/globaldem",
-        "description": "SRTM DEM data for elevation. NASA Shuttle Radar Topography Mission (SRTM)(2013). Shuttle Radar Topography Mission (SRTM) Global. Distributed by OpenTopography. https://doi.org/10.5069/G9445JDF. Accessed: 2025-06-09"
+        "description": "SRTM DEM data for elevation. NASA Shuttle Radar Topography Mission (SRTM)(2013). Shuttle Radar Topography Mission (SRTM) Global. Distributed by OpenTopography.",
+        "url": "https://doi.org/10.5069/G9445JDF"
     },
     "gedi-data": {
         "type": "file",
         "source": "/kaggle/input/gedi-cluster0-2019-2021/gedi_cluster0_2019_2021.geojson",
-        "description": "Exported from Google Drive to Kaggle as dataset. Code snippet to download the data is shared in notebook. DOI: 10.5067/GEDI/GEDI02_A.002"
+        "description": "Exported from Google Drive to Kaggle as dataset. Code snippet to download the data is shared in notebook.",
+        "citation": "DOI: 10.5067/GEDI/GEDI02_A.002",
+        "url": "https://www.kaggle.com/datasets/ceeluna/gedi-cluster0-2019-2021"
     }
 }

@@ -42,13 +42,6 @@ def print_dataset_info(name: str):
     desc = meta.get('description', '')
     citation = meta.get('citation', '')
 
-    # # Логируем
-    # log.info(f"Loading dataset '{name}' from file: {file}")
-    # log.info(f"Description: {desc}")
-    # if citation:
-    #     log.info(f"Citation: {citation}")
-
-    # И выводим на экран
     print(f"Loading dataset: {name}")
     print(f"  File:        {file}")
     print(f"  Description: {desc}")

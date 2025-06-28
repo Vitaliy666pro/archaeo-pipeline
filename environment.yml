@@ -19,6 +19,7 @@ dependencies:
   - rasterio
   - shapely
   - pyproj
+  - proj
   - richdem
   - contextily
   - geodatasets
@@ -55,4 +56,5 @@ dependencies:
       - earthpy         # extra geospatial utilities
       - tqdm-joblib
       - py7zr
+      - kagglehub
 
