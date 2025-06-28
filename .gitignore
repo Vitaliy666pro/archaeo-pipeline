@@ -8,10 +8,9 @@ __pycache__/
 
 data/raw/*
 
-/data/processed/
-data/
+data/processed/
 *.pkl
 *.tif
 *.las
 *.parquet
-data/
+!data/raw/datasets.7z

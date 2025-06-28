@@ -14,6 +14,9 @@ RUN python -m ipykernel install \
     --name archaeo \
     --display-name "Python (Archaeo-Pipeline)"
 
+RUN apt-get update && apt-get install -y git-lfs && \
+    git lfs install --skip-repo
+
 COPY . /app
 
 ENTRYPOINT ["/opt/conda/envs/archaeo/bin/jupyter-lab", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
