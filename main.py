@@ -22,17 +22,17 @@ def main():
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     logging.info("🚀 Starting full pipeline")
 
-    logging.info("1) Unpacking raw data archives…")
-    unpack_archives()
+    # logging.info("1) Unpacking raw data archives…")
+    # unpack_archives()
 
-    logging.info("2) Combining and cleaning datasets…")
-    combined_df = process_datasets()
+    # logging.info("2) Combining and cleaning datasets…")
+    # combined_df = process_datasets()
 
-    logging.info("3) Downloading external Kaggle datasets…")
-    download_all_kaggle_datasets()
+    # logging.info("3) Downloading external Kaggle datasets…")
+    # download_all_kaggle_datasets()
 
-    logging.info("4) Generating tiles with regions and sites…")
-    get_tiles_with_reg_and_sites()
+    # logging.info("4) Generating tiles with regions and sites…")
+    # get_tiles_with_reg_and_sites()
 
     logging.info("5) Extracting rivers and mountain features…")
     get_rivers_and_mountains()

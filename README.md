@@ -100,5 +100,5 @@ GSA_EMAIL=your-sa@your-project.iam.gserviceaccount.com
    ```
 
 7. **Inspect results**  
-   Check `results/` folder for outputs and candidates.
+   Check `results/predicted` folder for short_list and top_500_candidates.
    Check `notebooks/` stg_3_1_visual_gpt_verification to see the promts and visual_gpt 4.1 output
