@@ -14,3 +14,4 @@ data/processed/
 *.las
 *.parquet
 !data/raw/datasets.7z
+secrets

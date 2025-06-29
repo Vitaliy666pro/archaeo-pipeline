@@ -13,6 +13,8 @@ dependencies:
   - lightgbm
   - joblib
   - tqdm
+  - earthengine-api
+
 
   # Geospatial data and rasters
   - geopandas
