@@ -214,7 +214,10 @@ def get_tiles_with_reg_and_sites():
         out_path=PROCESSED_DIR / "tiles_9km.gpkg",
         n_jobs=-1
     )
-
+    LAT_CUT = -18.2
+    tmp = tiles_gdf.to_crs(AOI_CRS)
+    mask = tmp.geometry.centroid.y >= LAT_CUT
+    tiles_gdf = tiles_gdf[mask.values]
     tiles_web = tiles_gdf.to_crs(METRIC_CRS)
 
     # Generate regional bboxes (hardcoded 3x2 split like before)

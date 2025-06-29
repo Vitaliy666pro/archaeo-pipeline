@@ -427,25 +427,25 @@ def get_rivers_and_mountains():
             out_col="dist_to_mountain_m"
         )
         regions_final[name] = gdf
-    # 5. Distance to rivers
-    # regions_with_dist = {}
-    # for name, gdf in regions_final.items():
-    #     gdf_dist = get_distance_to_rivers_parallel(
-    #         geo_gdf= gdf,
-    #         riv_gdf= main_rivers_web,
-    #         geometry_col= "geometry",
-    #         n_jobs= -1
-    #     )
-    #     regions_with_dist[name] = gdf_dist
+    #5. Distance to rivers
     regions_with_dist = {}
-
     for name, gdf in regions_final.items():
-        gdf_dist = get_distance_to_rivers_fast(
-            geo_gdf=gdf,
-            riv_gdf=main_rivers_web,
-            geometry_col="geometry"
+        gdf_dist = get_distance_to_rivers_parallel(
+            geo_gdf= gdf,
+            riv_gdf= main_rivers_web,
+            geometry_col= "geometry",
+            n_jobs= -1
         )
         regions_with_dist[name] = gdf_dist
+    # regions_with_dist = {}
+
+    # for name, gdf in regions_final.items():
+    #     gdf_dist = get_distance_to_rivers_fast(
+    #         geo_gdf=gdf,
+    #         riv_gdf=main_rivers_web,
+    #         geometry_col="geometry"
+    #     )
+    #     regions_with_dist[name] = gdf_dist
     # 6. River features
     regions_with_river_features = {}
     for name, gdf in regions_with_dist.items():
@@ -527,6 +527,7 @@ def get_rivers_and_mountains():
         out["country"] = joined["name"]
         regions_flat_with_country[region] = out
     # 11. Combine all regions into final GeoDataFrame
+
     all_tiles_flat = pd.concat(
         regions_flat_with_country.values(), ignore_index=True
     )

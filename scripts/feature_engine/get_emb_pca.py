@@ -1,4 +1,3 @@
-# scripts/feature_engine/get_emb_pca.py
 import os
 import glob
 import yaml
@@ -164,6 +163,7 @@ def get_emb_pca(config_path="config.yaml"):
 
     print(f"[✓] Saved {final_gdf.shape[1]} columns × {final_gdf.shape[0]} rows to:\n  {output_path}")
     return final_gdf
+
 
 if __name__ == "__main__":
     get_emb_pca()

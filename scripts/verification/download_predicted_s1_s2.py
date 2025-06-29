@@ -39,9 +39,8 @@ def retrieve_tiles(config_path: str = "config.yaml"):
         / "Nasa_lidar_2008_to_2018_DTMs"
         / "DTM_tiles"
     )
-
     # CSV listing candidate tiles
-    PATH_TO_COORDS_CSV = RESULTS_DIR / "candidates_top500.csv"
+    PATH_TO_COORDS_CSV = RESULTS_DIR / "short_list.csv"
     if not PATH_TO_COORDS_CSV.exists():
         raise FileNotFoundError(f"CSV not found: {PATH_TO_COORDS_CSV}")
 

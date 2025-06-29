@@ -180,6 +180,17 @@ def run_model(config_path: str = "config.yaml", threshold: float = 0.5):
     # ── Data ingestion ────────────────────────────────────────────────────────
     lidar_csv = os.path.join(RAW_DIR, "datasets/cms_brazil_lidar_tile_inventory.csv")
     df_base = load_base_tiles(PROCESSED_DIR)
+    HALF_SIDE = 9_000 / 2  
+    METRIC_CRS = "EPSG:3857"  # Web Mercator
+
+    df_base["geometry"] = df_base["geometry_point"].apply(
+        lambda pt: box(pt.x - HALF_SIDE,
+                    pt.y - HALF_SIDE,
+                    pt.x + HALF_SIDE,
+                    pt.y + HALF_SIDE)
+    )
+
+    df_base = gpd.GeoDataFrame(df_base, geometry="geometry", crs=METRIC_CRS)
     li_gdf = load_lidar_inventory(lidar_csv)
     df_base = mark_lidar_coverage(df_base, li_gdf)
 
@@ -304,7 +315,7 @@ def run_model(config_path: str = "config.yaml", threshold: float = 0.5):
 
     top500 = get_top_candidates(gdf_all, top_n=500)
     out_csv = os.path.join(RESULTS_DIR, "candidates_top500.csv")
-    final.to_csv(out_csv, index=False)
+    top500.to_csv(out_csv, index=False)
 
     print("Saved short list:", out_csv_short)
     print("Saved model →", model_txt)
