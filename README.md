@@ -18,6 +18,7 @@ archaeo-pipeline/
 ├── Makefile                 # Convenience shortcuts (download-data, build, up, down)
 ├── config.yaml              # Static paths, CRS, and model parameters
 ├── main.py                  # Script to run full pipeline end-to-end
+├── datasets_metadata.json   # Datasets with description and links
 ├── scripts/
 │   ├── data_preprocessing/
 │   │   ├── unpack_data.py
@@ -36,6 +37,8 @@ archaeo-pipeline/
 ├── data/
 │   ├── raw/                 # Raw downloaded data (not in VCS)
 │   └── interim/             # Intermediate outputs (not in VCS)
+│   └── processed/
+│   └── datasets.7z 
 ├── results/
 │   ├── predicted/           # S1/S2 & LiDAR hillshade downloads
 │   ├── maps/                # Generated figures and GeoPNGs
@@ -82,14 +85,7 @@ GSA_EMAIL=your-sa@your-project.iam.gserviceaccount.com
    secrets/gg-sa-key.json
    ```
 
-4. **(Optional) Download raw data**  
-   ```bash
-   make download-data
-   # or
-   bash scripts/data_preprocessing/download_external_datasets.sh
-   ```
-
-5. **Build & launch**  
+4. **Build & launch**  
    ```bash
    docker-compose build
    docker-compose up -d
@@ -98,17 +94,11 @@ GSA_EMAIL=your-sa@your-project.iam.gserviceaccount.com
    `http://localhost:8888/?token=<JUPYTER_TOKEN>`
 
 6. **Run the pipeline**  
-   ```bash
-   # In terminal:
-   docker-compose exec app python main.py
-   # Or in JupyterLab:
-   %run main.py
+   ```
+   select the kernel archeo_pipeline run main.py
+
    ```
 
 7. **Inspect results**  
    Check `results/` folder for outputs and candidates.
-
-8. **Teardown**  
-   ```bash
-   docker-compose down
-   ```
+   Check `notebooks/` stg_3_1_visual_gpt_verification to see the promts and visual_gpt 4.1 output
