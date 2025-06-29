@@ -1,97 +1,114 @@
 # Archaeo-Pipeline
 
-A containerized data pipeline for archaeological site analysis, featuring raw data ingestion, processing, model training, and geospatial visualizations.
+A Dockerized end-to-end data pipeline for archaeological site detection and verification.
 
-## Repository Structure
+---
+
+## Repository Layout
 
 ```
 archaeo-pipeline/
 ├── .env.example             # Template for runtime secrets
+├── .env                     # Your local secrets (not in VCS)
+├── secrets/                 # Service‐account JSONs (not in VCS)
+│   └── gg-sa-key.json       # GCP Earth Engine service account key
 ├── environment.yml          # Conda/Mamba environment specification
 ├── Dockerfile               # Defines the Docker image and JupyterLab entrypoint
 ├── docker-compose.yml       # Service definition, volume mounts, and ports
-├── Makefile                 # Convenience shortcuts (download-data, build, up)
-├── README.md                # Project overview and Quick Start instructions
-├── setup_instructions.py    # Quick start instructions (also available as PDF)
-├── setup_instructions.pdf   # Quick start instructions in PDF format
-├── config.yaml              # (Optional) Static paths and model parameters
+├── Makefile                 # Convenience shortcuts (download-data, build, up, down)
+├── config.yaml              # Static paths, CRS, and model parameters
+├── main.py                  # Script to run full pipeline end-to-end
 ├── scripts/
-│   └── download_data.sh     # Script to fetch raw datasets into `data/`
+│   ├── data_preprocessing/
+│   │   ├── unpack_data.py
+│   │   ├── combine_datasets.py
+│   │   └── download_external_datasets.py
+│   ├── feature_engine/
+│   │   ├── get_tiles_with_regions_and_sites.py
+│   │   ├── get_rivers_and_mountains.py
+│   │   ├── get_soil_features.py
+│   │   ├── get_emb_pca.py
+│   │   └── cut_roads.py
+│   ├── model/
+│   │   └── train_model.py
+│   └── verification/
+│       └── download_predicted_s1_s2.py
 ├── data/
 │   ├── raw/                 # Raw downloaded data (not in VCS)
-│   └── interim/             # Processed data outputs (not in VCS)
-├── notebooks/
-│   └── legacy/              # Original Jupyter drafts (read-only)
+│   └── interim/             # Intermediate outputs (not in VCS)
 ├── results/
-│   ├── maps/                # Generated PNGs, heatmaps, geojsons
-│   ├── report.pdf           # Final PDF report
-│   ├── final_shortlist.csv  # Top candidates
-│   └── candidates_2000.geojson
-├── src/                     # Refactored modules
-│   ├── data_io.py           # Data loading & cleaning functions
-│   ├── features.py          # Feature extraction logic
-│   ├── train.py             # Model training pipeline
-│   ├── predict.py           # Batch prediction script
-│   ├── viz.py               # Map and figure generation
-│   └── config.py            # Config loader for `config.yaml`
-└── tests/                   # (Optional) Unit and integration tests
-    └── test_data_io.py
+│   ├── predicted/           # S1/S2 & LiDAR hillshade downloads
+│   ├── maps/                # Generated figures and GeoPNGs
+│   └── candidates_top500.csv # Final shortlist
+└── notebooks/               # Analysis & demos
 ```
 
-## Quick Start Instructions
+---
 
-1. **Clone the repository**
+## `.env` Keys
 
+Copy and fill in **exactly** these variables in your project root:
+
+```ini
+OPENTOPO_KEY=YOUR_OPENTOPO_KEY
+OPENAI_API_KEY=YOUR_CLASSIC_SK_KEY
+JUPYTER_TOKEN=YOUR_JUPYTER_TOKEN
+EE_INIT_PROJ=YOUR_EE_PROJECT_ID
+GSA_EMAIL=your-sa@your-project.iam.gserviceaccount.com
+```
+
+> **Note:**
+> - Do **not** commit `.env` or `secrets/` contents to VCS.
+> - Place your Earth Engine–enabled GCP service-account JSON at `secrets/gg-sa-key.json`.
+
+---
+
+## Quick Start
+
+1. **Clone & enter**  
    ```bash
    git clone https://github.com/your-org/archaeo-pipeline.git
    cd archaeo-pipeline
    ```
 
-2. **Configure runtime secrets**
-
+2. **Configure `.env`**  
    ```bash
    cp .env.example .env
+   # then edit .env to set your keys as shown above
    ```
 
-   Edit `.env` with your keys:
-
-   ```bash
-   JUPYTER_TOKEN=my-super-secret-token
-   OPENAI_API_KEY=your-openai-api-key
-   OPENTOPO_KEY=your-opentopo-key
-   COPERNICUS_CLIENT_ID=your-copernicus-client-id
-   COPERNICUS_CLIENT_SECRET=your-copernicus-client-secret
+3. **Add GCP JSON key**  
+   ```text
+   secrets/gg-sa-key.json
    ```
 
-3. **(Optional) Download raw data**
-
+4. **(Optional) Download raw data**  
    ```bash
    make download-data
    # or
-   bash scripts/download_data.sh
+   bash scripts/data_preprocessing/download_external_datasets.sh
    ```
 
-4. **Build the Docker image**
-
+5. **Build & launch**  
    ```bash
    docker-compose build
-   ```
-
-5. **Start JupyterLab**
-
-   ```bash
    docker-compose up -d
    ```
+   Open JupyterLab at:  
+   `http://localhost:8888/?token=<JUPYTER_TOKEN>`
 
-6. **Open JupyterLab**
-   Navigate to:
-
+6. **Run the pipeline**  
+   ```bash
+   # In terminal:
+   docker-compose exec app python main.py
+   # Or in JupyterLab:
+   %run main.py
    ```
-   http://<VM_IP_or_localhost>:8888/?token=my-super-secret-token
-   ```
 
-7. **Stop the environment**
+7. **Inspect results**  
+   Check `results/` folder for outputs and candidates.
 
+8. **Teardown**  
    ```bash
    docker-compose down
    ```

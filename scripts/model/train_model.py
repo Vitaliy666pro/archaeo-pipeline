@@ -111,6 +111,50 @@ def get_final_predictions(gdf_all: gpd.GeoDataFrame, li_gdf: gpd.GeoDataFrame, t
     result_wgs["lat"] = result_wgs.centroid.y
     return result_wgs.drop(columns=["centroid"])
 
+
+def get_top_candidates(
+    gdf_all: gpd.GeoDataFrame,
+    top_n: int = 500,
+    exclude_splits: tuple = ('train', 'val')
+) -> gpd.GeoDataFrame:
+    """
+    Select the top-N candidate tiles by predicted probability,
+    excluding any rows whose 'split' is in exclude_splits.
+
+    Returns a GeoDataFrame in EPSG:4326 with columns:
+      - tile_id
+      - split
+      - n_geoglyphs
+      - pred_prob
+      - lon, lat (centroid of each tile)
+    """
+    # 1) filter out unwanted splits
+    df = gdf_all[~gdf_all['split'].isin(exclude_splits)].copy()
+
+    # 2) sort by descending prediction probability and take top_n
+    df = df.sort_values('pred_prob', ascending=False).head(top_n)
+
+    # 3) ensure geometry column is present and in Web Mercator
+    df = gpd.GeoDataFrame(df, geometry='geometry', crs=df.crs or "EPSG:3857")
+    if df.crs.to_epsg() != 3857:
+        df = df.to_crs("EPSG:3857")
+
+    # 4) compute centroids and reproject to WGS84
+    df['centroid'] = df.geometry.centroid
+    df_wgs = df.to_crs("EPSG:4326")
+    df_wgs['lon'] = df_wgs.centroid.x
+    df_wgs['lat'] = df_wgs.centroid.y
+
+    # 5) select and return the desired columns
+    return df_wgs[[
+        'tile_id',
+        'split',
+        'n_geoglyphs',
+        'pred_prob',
+        'lon',
+        'lat'
+    ]]
+
 ############################################################
 # 2. Main pipeline                                         #
 ############################################################
@@ -237,9 +281,10 @@ def run_model(config_path: str = "config.yaml", threshold: float = 0.5):
 
     # ── Intersect with LiDAR & keep TOP‑500 ───────────────────────────────────
     gdf_all = gpd.GeoDataFrame(df_all, geometry="geometry", crs="EPSG:3857")
+    
     all_candidates = get_final_predictions(gdf_all, li_gdf, threshold)
-    top500 = (
-        all_candidates.sort_values("pred_prob", ascending=False).head(500).reset_index(drop=True)
+    short_list = (
+        all_candidates.sort_values("pred_prob", ascending=False).head(100).reset_index(drop=True)
     )
 
     ########################################################
@@ -254,9 +299,14 @@ def run_model(config_path: str = "config.yaml", threshold: float = 0.5):
         joblib.dump(final_clf, model_pkl, compress=3)
 
     # 3.2 Predictions
-    out_csv = os.path.join(RESULTS_DIR, "candidates_top500.csv")
-    top500.to_csv(out_csv, index=False)
+    out_csv_short = os.path.join(RESULTS_DIR, "short_list.csv")
+    short_list.to_csv(out_csv_short, index=False)
 
+    top500 = get_top_candidates(gdf_all, top_n=500)
+    out_csv = os.path.join(RESULTS_DIR, "candidates_top500.csv")
+    final.to_csv(out_csv, index=False)
+
+    print("Saved short list:", out_csv_short)
     print("Saved model →", model_txt)
     print("Saved candidates →", out_csv)
 

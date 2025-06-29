@@ -66,5 +66,12 @@
         "description": "SoilGrids 2.0: global gridded soil information (250m resolution) for 0–5 cm depth. Includes clay fraction (%), pH in H2O, and Soil Organic Carbon (g/kg). Reprojected to EPSG:4326 for compatibility with tile centroids.",
         "citation": "Poggio et al. (2021), SoilGrids 2.0: producing soil information for the globe with machine learning. Soil, 7, 217–240. https://doi.org/10.5194/soil-7-217-2021",
         "url": "https://soilgrids.org"
+    },
+    "central_southamerica_roads": {
+        "type": "vector",
+        "source": "data/raw/datasets/central_southamerica.gdb",
+        "description": "Road network for Central and South America from the World Bank Data Catalog. Contains line features for national and local roads in an ESRI File Geodatabase, clipped to the study area and reprojected to EPSG:3857 for spatial joins with tile geometries.",
+        "citation": "World Bank Data Catalog (2022). Central_SouthAmerica Roads. https://datacatalogfiles.worldbank.org/ddh-published/0040289/DR0050247/central_southamerica.zip",
+        "url": "https://datacatalogfiles.worldbank.org/ddh-published/0040289/DR0050247/central_southamerica.zip"
     }
 }
