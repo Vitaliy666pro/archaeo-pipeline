@@ -58,4 +58,5 @@ dependencies:
       - py7zr
       - kagglehub
       - polars
+      - pyarrow
 
