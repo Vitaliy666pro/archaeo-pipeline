@@ -41,7 +41,7 @@ archaeo-pipeline/
 │   └── datasets.7z 
 ├── results/
 │   ├── predicted/           # S1/S2 & LiDAR hillshade downloads
-│   ├── maps/                # Generated figures and GeoPNGs
+│   ├── maps/                
 │   └── candidates_top500.csv # Final shortlist
 └── notebooks/               # Analysis & demos
 ```
