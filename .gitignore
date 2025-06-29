@@ -15,3 +15,4 @@ data/processed/
 *.parquet
 !data/raw/datasets.7z
 secrets
+!results/

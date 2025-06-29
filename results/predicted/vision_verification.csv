@@ -1,0 +1,392 @@
+tile,vision_verification
+BON_A01_2018_LAS_0,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade**: The image shows irregular, branching linear features with no clear closed or geometric shapes. The lines appear natural, resembling drainage or erosion patterns.
+   - **Sentinel-1 SAR (VV)**: The image is noisy, but no distinct linear or closed geometric features are visible. There is a hint of a faint circular pattern, but it is not clear or well-defined.
+   - **Sentinel-2 true-color**: The area is mostly forested with some clearings. The clearings are rectangular and align with modern land use (fields or roads), not archaeological features.
+
+2) **Reasoning**:
+   - The patterns in the LiDAR are irregular and dendritic, typical of natural erosion or water flow, not man-made earthworks.
+   - The SAR image does not show any clear, corresponding geometric or linear features that would indicate a man-made structure.
+   - The visible clearings in the Sentinel-2 image are straight-edged and rectangular, consistent with modern agricultural or logging activity, not ancient enclosures or mounds.
+
+3) **Uncertainty**:
+   - Uncertain on SAR due to noise and low resolution, but no corroborating evidence in LiDAR or Sentinel-2.
+
+**Conclusion**: There is no clear evidence of a man-made earth structure visible in at least two images that cannot be explained by natural or modern causes."
+BON_A01_2018_LAS_11,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: The main visible features are irregular, sinuous, and branching depressions or ridges, with no clear evidence of closed or linear geometric forms. The patterns are consistent across both sun angles and edge gradient, showing naturalistic, dendritic shapes.
+   - **Sentinel-1 SAR (VV)**: The image is noisy, but there are no clear, sharp linear or closed features. The texture is mottled, and any faint lines are diffuse and do not form geometric shapes.
+   - **Sentinel-2 true-color**: The area is mostly covered by dense forest, with some clearings and a few straight lines (roads or tracks) and rectangular agricultural fields. No geometric earthworks or enclosures are visible.
+
+2) **Reasoning**:
+   - The LiDAR features are consistent with natural erosion patterns, such as stream channels or drainage lines, rather than man-made earthworks. There are no rectilinear or circular enclosures, ditches, or mounds with clear geometric intent.
+   - The SAR image does not reveal any additional structure that would suggest a buried or otherwise obscured archaeological feature.
+   - The true-color image shows modern land use (roads, fields, clearings) but nothing that matches the criteria for archaeological earthworks.
+
+3) **Uncertainty**:
+   - Uncertain on Sentinel-1 due to speckle noise, but the absence of clear geometric features in LiDAR and Sentinel-2 is decisive.
+
+**Conclusion**: No man-made earth structure with closed or linear geometry is visible in at least two images, and all observed features can be explained by natural or modern land use."
+BON_A01_2018_LAS_5,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: Shows subtle, broad, rectilinear boundaries, but these are diffuse and lack sharp, regular edges. No clear closed or linear geometry typical of archaeological earthworks is visible; the features resemble large, blocky patches.
+   - **Sentinel-1 SAR (VV)**: The image is noisy and grainy, with no discernible linear or geometric features matching those in the LiDAR. No clear contrast or pattern is visible.
+   - **Sentinel-2 true-color**: Displays a dense forested area with some irregular clearings at the edges. No geometric or linear features are visible within the forested area that would correspond to the LiDAR patterns.
+
+2) **Reasoning**:
+   - The broad, blocky patterns in the LiDAR are consistent with modern forestry compartments or land management units, not archaeological features. They lack the sharp, regular, and continuous geometry (such as ditches, enclosures, or mounds) expected of man-made earthworks.
+   - No corresponding features are visible in the SAR or true-color images, which would be expected if there were substantial earthworks affecting vegetation or surface roughness.
+   - The absence of clear, repeated geometry in at least two images, and the lack of exclusion of modern land use (forestry), means these cannot be confidently identified as archaeological.
+
+3) **Uncertainty**:
+   - Uncertain on S1 due to high noise and lack of clear features.
+   - Defaulting to NO due to lack of corroboration and the likelihood of modern/natural explanation."
+HUM_A01_2013_laz_10,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade**: The image shows a mostly uniform surface with some small, irregular bumps and minor linear features, but nothing that forms a clear closed or straight linear geometry. The features visible are scattered and lack organization.
+   - **Sentinel-1 SAR (VV)**: The SAR image is dominated by speckle noise and a generally uniform texture. No distinct linear or geometric patterns are visible.
+   - **Sentinel-2 true-color**: The area is mostly dense forest with some cleared patches at the edges. No geometric clearings, enclosures, or linear features are visible within the forested area.
+
+2) **Reasoning**:
+   - The minor features in the LiDAR are irregular and do not form closed or straight lines typical of archaeological earthworks. They are more consistent with natural microtopography or treefall mounds.
+   - The SAR image does not corroborate any geometric or linear features seen in the LiDAR.
+   - The true-color image shows undisturbed forest, with no evidence of geometric clearings or patterns that would suggest archaeological features.
+   - The visible features can be explained by natural processes (vegetation, minor erosion, or treefall), and there is no evidence of roads, fields, or modern infrastructure within the forested area.
+
+3) **Uncertainty**:
+   - Uncertain on S1 due to high speckle noise, but no corroborating features in LiDAR or S2. Defaulting to NO."
+HUM_A01_2013_laz_11,"[YES]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: Multiple closed and semi-closed geometric patterns are visible, including clear rectilinear and curvilinear enclosures. These features have sharp, continuous edges and are distinct from the surrounding microtopography.
+   - **Sentinel-1 SAR (VV)**: Subtle linear and curvilinear contrasts are faintly visible, roughly corresponding to the LiDAR-detected features, though the image is somewhat noisy.
+   - **Sentinel-2 true-color**: The area is densely forested, with no visible modern field boundaries, roads, or recent disturbances within the forested core. The geometric features do not correspond to any visible agricultural or infrastructural patterns.
+
+2) **Reasoning**:
+   - The closed and linear geometries in the LiDAR are inconsistent with natural erosion, which typically produces irregular, dendritic, or amorphous forms. The features are too regular and extensive to be animal trails or natural drainage.
+   - The absence of visible roads, field boundaries, or modern land use in the true-color image rules out recent anthropogenic causes.
+   - The faint correspondence in the SAR image, despite noise, supports the presence of subtle surface or subsurface structure, further excluding random natural variation.
+
+3) **Uncertainty**:
+   - Uncertain on Sentinel-1 due to speckle noise and low contrast, but the LiDAR evidence is strong and the true-color image excludes modern causes.
+
+**Conclusion**: The features meet the criteria for a man-made earth structure visible in at least two images and cannot be explained by modern or natural processes."
+HUM_A01_2018_LAS_8,"[YES]
+
+1) **Observation**:
+   - **LiDAR hillshade**: Multiple continuous, curvilinear and angular embankments or ditches are visible, forming closed and semi-closed geometric shapes. These features are sharply defined, with consistent width and clear separation from the surrounding microtopography.
+   - **Sentinel-1 SAR (VV)**: The area is noisy, but there are subtle linear contrasts that spatially correspond to some of the LiDAR features, suggesting a difference in surface roughness or moisture along those lines.
+   - **Sentinel-2 true-color**: The area is densely forested, with no visible modern field boundaries, roads, or geometric clearings within the forested zone. The features seen in LiDAR do not correspond to any visible agricultural or modern land use.
+
+2) **Reasoning**:
+   - The LiDAR reveals geometric, closed, and linear earthworks that are inconsistent with natural erosion (which would be more random and less sharply bounded) and do not match the patterns of modern roads or fields (which are visible only at the forest edge in Sentinel-2).
+   - The partial correspondence in SAR (despite noise) supports the presence of a surface or subsurface structure affecting radar backscatter.
+   - The absence of visible modern disturbance in Sentinel-2, combined with the forest cover, excludes recent anthropogenic causes.
+
+3) **Uncertainty**:
+   - Uncertain on Sentinel-1 due to speckle noise, but LiDAR and Sentinel-2 together are sufficient for verification.
+
+**Conclusion**: The features meet the criteria for a man-made earth structure visible in at least two images and cannot be explained by modern or natural processes."
+PRG_A01_2013_P08a_laz_4,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: The terrain shows subtle undulations and minor linear features, but no clear closed or linear geometric forms that stand out as distinctly man-made. The patterns are irregular and consistent with natural microtopography or agricultural modification.
+   - **Sentinel-1 SAR (VV)**: The image is noisy, with diffuse patches of varying backscatter. No sharp, continuous lines or closed shapes are visible; the texture is mottled and lacks geometric regularity.
+   - **Sentinel-2 true-color**: The area is dominated by agricultural fields, forest patches, and natural watercourses. Field boundaries and roads are straight or gently curving, typical of modern land use. No distinct geometric earthworks or enclosures are visible.
+
+2) **Reasoning**:
+   - The features in all images correspond to natural landforms (e.g., river valleys, erosion patterns) and modern agricultural boundaries. There are no clear, repeated geometric shapes (rectangles, circles, ditches, or mounds) that would indicate archaeological earthworks. The visible lines are consistent with roads or field edges, and the irregularities match natural or agricultural processes.
+
+3) **Uncertainty**:
+   - Uncertain on **Sentinel-1** due to noise and low contrast, but no corroborating evidence in LiDAR or Sentinel-2. Defaulting to NO.
+
+**Conclusion**: No clear evidence of a man-made archaeological earth structure is visible in at least two images."
+PRG_A01_2013_P08b_laz_5,"[YES]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: In both sun angles, there is a clear, rectilinear, closed geometric feature visible in the center of the strip, with straight lines forming a near-rectangular enclosure. The edges are sharply defined and contrast with the surrounding natural terrain.
+   - **Sentinel-1 SAR (VV)**: The same area shows a faint but discernible rectangular outline, with linear contrasts matching the LiDAR geometry, suggesting a difference in surface roughness or moisture retention along the same lines.
+   - **Sentinel-2 true-color**: The enclosure area is partially visible as a subtle color/vegetation difference, with the interior and boundary showing a slight contrast to the surrounding field, but the geometry is less distinct than in LiDAR and SAR.
+
+2) **Reasoning**:
+   - The feature is visible in both LiDAR and SAR, with matching rectilinear, closed geometry. Such sharp, regular shapes are not typical of natural erosion, drainage, or geological processes in this landscape.
+   - The feature does not correspond to modern roads, field boundaries, or recent agricultural activity, as seen in the true-color image, where modern features are more irregular or follow different alignments.
+   - The size, shape, and preservation of the feature are consistent with known archaeological earthworks (e.g., enclosures or geoglyphs) in similar environments.
+
+3) **Uncertainty**:
+   - The SAR image is somewhat noisy, but the geometric outline is still discernible and matches the LiDAR. The true-color image is less clear, but does not contradict the presence of the feature.
+   - No significant uncertainty that would change the assessment.
+
+**Conclusion**: The presence of a closed, rectilinear earthwork visible in both LiDAR and SAR, and not explained by modern or natural causes, supports a [YES] for a man-made archaeological structure."
+PRG_A01_2013_P08b_laz_9,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: The surface shows subtle, irregular microtopography but no clear linear or closed geometric features. No distinct ditches, mounds, or enclosures are visible; the texture appears natural and consistent with undisturbed terrain.
+   - **Sentinel-1 SAR (VV)**: The image is noisy, with some faint, irregular tonal variations. There are no sharp, continuous lines or geometric shapes that would indicate anthropogenic earthworks.
+   - **Sentinel-2 true-color**: The landscape is dominated by agricultural fields, forest patches, and natural watercourses. Field boundaries and roads are straight or gently curving, typical of modern land use. No unusual geometric patterns or features are apparent.
+
+2) **Reasoning**:
+   - The observed patterns in all images are consistent with natural landforms (e.g., erosion, vegetation variation) and modern agricultural activity. There are no features with the closed or linear geometry typical of archaeological earthworks, nor are there anomalies that cannot be explained by roads, field boundaries, or natural processes.
+   - No feature is visible in at least two images that would suggest a man-made earth structure.
+
+3) **Uncertainty**:
+   - Uncertain on Sentinel-1 due to noise, but the absence of corroborating features in LiDAR and Sentinel-2 leads to a conservative [NO]."
+RIB_A01_2014_laz_3,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: Shows irregular, natural-looking undulations and slopes. No clear evidence of closed or linear geometric features; the relief appears consistent with natural erosion or small hills.
+   - **Sentinel-1 SAR (VV)**: The image is noisy and lacks any distinct linear or geometric patterns. No clear contrast or signature that would indicate a man-made structure.
+   - **Sentinel-2 true-color**: The area is mostly dense forest with a sharp boundary to cleared agricultural fields. No visible geometric clearings, enclosures, or patterns in the forested area.
+
+2) **Reasoning**:
+   - The LiDAR does not reveal any closed or straight linear features that would suggest an enclosure, mound, ditch, or geoglyph. The visible relief is irregular and typical of natural terrain.
+   - The SAR image does not show any corresponding geometric anomalies or contrasts.
+   - The true-color image shows only natural forest and agricultural field boundaries, with no evidence of archaeological features.
+   - The patterns observed can be explained by natural topography and modern land use (deforestation, agriculture), not by archaeological earthworks.
+
+3) **Uncertainty**:
+   - Uncertain on Sentinel-1 due to high noise and lack of clear features, but this does not affect the overall conclusion as LiDAR and Sentinel-2 do not support the presence of archaeological structures.
+
+**Conclusion**: No man-made earth structure is clearly visible in at least two images, and all observed features can be explained by natural or modern causes."
+RIB_A01_2018_LAS_12,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: The surface shows irregular, small-scale mounds and depressions, but no clear linear or closed geometric patterns. The texture is rough and natural, with no evidence of ditches, enclosures, or rectilinear features.
+   - **Sentinel-1 SAR (VV)**: The image is dominated by speckle noise and a generally uniform texture. No distinct linear or geometric anomalies are visible that would suggest anthropogenic features.
+   - **Sentinel-2 true-color**: The area is mostly dense forest, with a sharp boundary to cleared land in the lower left. No geometric clearings, lines, or shapes are visible within the forested area.
+
+2) **Reasoning**:
+   - The LiDAR does not reveal any closed or linear earthworks, ditches, or mounds with geometric regularity. The observed microtopography is consistent with natural erosion or bioturbation.
+   - The SAR image is too noisy to discern subtle features, but no strong linear or geometric contrasts are present.
+   - The true-color image shows undisturbed forest, with no visible traces of archaeological clearings or patterns. The cleared area in the lower left is modern and agricultural in appearance.
+
+3) **Uncertainty**:
+   - Uncertain on S1 due to high speckle noise, but no supporting evidence in LiDAR or S2.
+   - All images lack clear, repeated geometric or linear features that cannot be explained by natural or modern agricultural processes.
+
+**Conclusion**: No clear man-made earth structure is visible in at least two images."
+RIB_A01_2018_LAS_5,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade**: The image shows mostly natural microtopography with some gentle undulations and a few faint, broad, arcuate features in the upper part. No clear closed or linear geometric earthworks are visible. The lower half is missing data (black).
+   - **Sentinel-1 SAR (VV)**: The image is dominated by speckle noise and lacks any discernible geometric or linear features. No clear patterns stand out.
+   - **Sentinel-2 true-color**: The image shows a sharp boundary between dense forest and cleared agricultural fields. The fields have irregular, polygonal shapes typical of modern land use. No geometric earthworks or enclosures are visible within the forested area.
+
+2) **Reasoning**:
+   - The arcuate features in the LiDAR are broad and lack the regularity, sharpness, or closure expected of archaeological earthworks. They are consistent with natural erosion or slope processes.
+   - No corresponding features are visible in the SAR or Sentinel-2 images that would reinforce the presence of a man-made structure.
+   - The visible field boundaries and clearings in Sentinel-2 are modern and irregular, not archaeological.
+   - No features meet the criteria of being visible in at least two images with clear man-made geometry.
+
+3) **Uncertainty**:
+   - Uncertain on SAR due to high speckle noise, but no supporting evidence in LiDAR or Sentinel-2.
+   - Large areas of missing data in LiDAR and Sentinel-2 (due to forest cover or acquisition gaps) limit visibility, but within the visible areas, no qualifying features are present.
+
+**Conclusion**: No clear evidence of a man-made earth structure is visible in at least two images."
+TAL_A01_2018_LAS_2,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: The surface shows irregular, natural microtopography with no clear linear or closed geometric features. There are some subtle undulations, but these lack sharp edges or symmetry.
+   - **Sentinel-1 SAR (VV)**: The image is dominated by speckle noise and a generally uniform texture. No distinct linear or geometric anomalies are visible.
+   - **Sentinel-2 true-color**: The area is mostly covered by dense forest, with some irregular clearings at the edges. No rectilinear or circular features are apparent within the forested area.
+
+2) **Reasoning**:
+   - The LiDAR does not reveal any ditches, embankments, or enclosures with clear anthropogenic geometry. The visible patterns are consistent with natural terrain and vegetation.
+   - The SAR image does not show any linear or geometric backscatter anomalies that would suggest buried or surface earthworks.
+   - The true-color image shows only natural vegetation and irregular clearings, which are likely modern and agricultural, not archaeological.
+
+3) **Uncertainty**:
+   - Uncertain on **SAR** due to high speckle noise, but no supporting evidence in LiDAR or Sentinel-2.
+   - All images are sufficiently clear to rule out man-made earth structures as defined.
+
+**Conclusion**: No clear evidence of archaeological earthworks visible in at least two images."
+TAL_A01_2018_LAS_6,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: There are several curvilinear and somewhat angular depressions and ridges visible, especially in the lower and right portions of the image. These features are irregular, with no clear closed or linear geometric pattern typical of man-made earthworks.
+   - **Sentinel-1 SAR (VV)**: The image is dominated by speckle noise and low-contrast texture. No distinct linear or geometric features are visible that correspond to the patterns in the LiDAR.
+   - **Sentinel-2 true-color**: The area is mostly covered by dense vegetation, with some irregular clearings. No geometric or linear features are visible that would suggest archaeological structures.
+
+2) **Reasoning**:
+   - The features in the LiDAR image are irregular and lack the closed or straight-line geometry characteristic of archaeological earthworks (such as enclosures, mounds, or ditches). 
+   - There is no corresponding pattern in the SAR or optical images that matches the LiDAR features, which would be expected if these were substantial man-made earthworks.
+   - The visible clearings in the Sentinel-2 image are irregular and likely related to modern land use (e.g., small-scale clearing) or natural gaps, not archaeological features.
+   - The patterns in the LiDAR could be explained by natural erosion, drainage, or animal trails, and do not show the regularity or scale of archaeological sites.
+
+3) **Uncertainty**:
+   - Uncertain on S1 due to high speckle noise and low feature contrast, but no clear archaeological geometry is visible.
+   - No uncertainty on S2; vegetation cover is dense but clearings do not match expected archaeological forms.
+
+**Conclusion**: There is no clear evidence of a man-made earth structure visible in at least two images that cannot be explained by natural or modern causes."
+TAL_A01_2018_LAS_8,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: The terrain shows irregular, sinuous, and somewhat jagged linear features, but these lack clear geometric closure or regularity. No obvious rectilinear or circular enclosures, ditches, or mounds with consistent width or symmetry are visible. The patterns appear natural, following the topography.
+   - **Sentinel-1 SAR (VV)**: The image is noisy and low in contrast. There are some diffuse darker and lighter patches, but no clear linear or closed geometric features matching the LiDAR patterns.
+   - **Sentinel-2 true-color**: The area is mostly forested, with some irregular clearings and a few straight lines (likely roads or tracks) in the upper part. No geometric earthworks or enclosures are visible; the clearings do not correspond to any regular archaeological shapes.
+
+2) **Reasoning**:
+   - The features in the LiDAR are irregular and follow natural contours, typical of erosion or natural drainage rather than man-made structures.
+   - No corresponding geometric or linear features are visible in the SAR or optical images that would reinforce an archaeological interpretation.
+   - The visible straight lines in the Sentinel-2 image are consistent with modern roads or tracks, not ancient earthworks.
+   - There is no evidence of closed or regular linear geometry that cannot be explained by natural or modern causes.
+
+3) **Uncertainty**:
+   - Uncertain on **Sentinel-1** due to noise and low resolution, but the lack of supporting evidence in the other images defaults the answer to NO.
+
+**Conclusion**: No clear man-made earth structure is visible in at least two images that cannot be explained by natural or modern features."
+TAP_A02_2012_laz_2,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: There is a faint, large rectangular outline visible in the lower half of the image, with some subtle linear features. However, these lines are not sharply defined and appear to blend with the surrounding microtopography. No clear ditch, mound, or embankment is evident.
+   - **Sentinel-1 SAR (VV)**: The SAR image shows a very subtle, slightly lighter rectangular area in the same location, but the contrast is low and the feature is not sharply bounded. The texture is noisy and lacks clear geometric definition.
+   - **Sentinel-2 true-color**: The area corresponding to the LiDAR feature is within a large agricultural field. There are no visible color or vegetation differences that would indicate a buried or surface archaeological feature. The field boundaries and plow lines are modern and regular.
+
+2) **Reasoning**:
+   - The faint rectangular pattern in the LiDAR could be interpreted as a possible enclosure, but it is not well-defined and lacks the clear, sharp edges typical of man-made earthworks.
+   - The corresponding area in the SAR image is too indistinct to confirm the presence of a structure; the signal could be due to soil or moisture variation.
+   - The true-color image shows active agricultural use, with no sign of an ancient feature—no cropmarks, soil marks, or vegetation anomalies.
+   - The observed patterns are consistent with modern field boundaries and agricultural activity, not with archaeological earthworks.
+
+3) **Uncertainty**:
+   - Uncertain on **SAR** due to low contrast and noise, but the lack of corroborating evidence in the optical and LiDAR images defaults the assessment to NO.
+
+**Conclusion**: No clear, unambiguous man-made earth structure is visible in at least two images that cannot be explained by modern agriculture or natural processes."
+TAP_A02_2013_laz_2,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: Subtle, irregular mounded and linear features are visible, but they lack clear, closed geometric shapes. The most prominent features are diffuse and appear to follow the natural topography or agricultural terracing.
+   - **Sentinel-1 SAR (VV)**: The image is noisy, with no distinct linear or closed features matching those in the LiDAR. No clear geometric anomalies stand out.
+   - **Sentinel-2 true-color**: The area is dominated by agricultural fields with straight and curved boundaries, typical of modern land use. No distinct earthworks, enclosures, or mounds with archaeological geometry are visible.
+
+2) **Reasoning**:
+   - The features in the LiDAR are not clearly geometric or closed; they are irregular and could be explained by natural erosion, plowing, or terracing.
+   - The SAR image does not reinforce any potential archaeological pattern from the LiDAR.
+   - The true-color image shows modern agricultural activity, and the visible patterns correspond to field boundaries and plowing, not ancient earthworks.
+   - No feature appears in at least two images with the required archaeological geometry.
+
+3) **Uncertainty**:
+   - Uncertain on SAR due to noise and low contrast, but no corroborating evidence in the other images.
+   - All images are interpretable, but none show clear, man-made archaeological features.
+
+**Conclusion**: No clear evidence of a man-made earth structure meeting the criteria is visible in these images."
+TAP_A02_2018_LAS_7,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: Several linear and rectilinear features are visible, including straight lines and rectangular outlines. There are also some circular/oval depressions and a curving line near the bottom. However, the majority of these features are regular, parallel, and intersect at right angles.
+   - **Sentinel-1 SAR (VV)**: The image is noisy, but there are faint linear contrasts that roughly correspond to the LiDAR lines. No clear closed or geometric earthworks stand out.
+   - **Sentinel-2 true-color**: The area is dominated by agricultural fields with straight boundaries and regular patterns. The lines and shapes seen in LiDAR correspond to field boundaries, plowing marks, and roads.
+
+2) **Reasoning**:
+   - The linear and rectilinear features in LiDAR are consistent with modern agricultural field boundaries and plowing, not archaeological earthworks. The regularity, parallelism, and right angles are typical of mechanized agriculture.
+   - The circular/oval features are isolated and could be natural or related to modern land use (e.g., water tanks, silos, or small ponds).
+   - The curving line at the bottom matches a field or road boundary visible in the true-color image.
+   - No feature forms a clear, closed geometric enclosure or mound that cannot be explained by modern land use or natural processes.
+   - The patterns are visible in at least two images, but their modern agricultural origin is clear.
+
+3) **Uncertainty**:
+   - Uncertain on Sentinel-1 due to noise and low contrast, but the available evidence from LiDAR and Sentinel-2 is sufficient to rule out archaeological features.
+
+**Conclusion**: No clear man-made earth structure of archaeological origin is visible. All observed features are consistent with modern agricultural or natural causes."
+TAP_A03_2016_laz_10,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade**: The terrain shows subtle, mostly linear and rectilinear features, but these are consistent with agricultural field boundaries and drainage. No clear closed or geometric earthworks are visible.
+   - **Sentinel-1 SAR (VV)**: The image displays a patchwork of rectangular and linear contrasts, matching the field patterns seen in the optical image. No distinct, enclosed, or curvilinear anomalies stand out.
+   - **Sentinel-2 true-color**: The area is dominated by agricultural fields, with straight boundaries and some irregular patches. No visible mounds, ditches, or geometric enclosures that cannot be explained by modern land use.
+
+2) **Reasoning**:
+   - The features visible in all three images are consistent with modern agricultural activity: straight lines, rectangular plots, and field boundaries. There are no clear signs of ancient earthworks (such as circular, oval, or complex geometric enclosures) that are distinct from the modern landscape organization.
+   - No features are present that cannot be explained by roads, field boundaries, or natural watercourses.
+
+3) **Uncertainty**:
+   - All images are clear enough for interpretation. No significant noise or cloud cover affects the visibility of potential archaeological features.
+
+**Conclusion**: There is no clear evidence of a man-made earth structure with closed or linear geometry that cannot be explained by modern or natural causes."
+TAP_A03_2018_LAS_0,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade**: Shows a very prominent straight linear feature running horizontally, with sharp edges and a large, trapezoidal area of different texture. The line is continuous and cuts across the landscape, intersecting with other faint straight lines.
+   - **Sentinel-1 SAR (VV)**: The same linear feature is visible as a bright, straight line, with the large trapezoidal area also showing a different backscatter pattern compared to surroundings.
+   - **Sentinel-2 true-color**: The linear feature corresponds exactly to a wide, straight, light-colored strip—clearly a modern road or cleared corridor. The trapezoidal area matches a large agricultural field or cleared land.
+
+2) **Reasoning**:
+   - The features are extremely regular, straight, and large in scale, matching the geometry and appearance of modern infrastructure (roads, field boundaries, or utility corridors).
+   - The alignment and width are consistent with modern roads or cleared rights-of-way, not with archaeological earthworks, which are typically smaller, less regular, and not so sharply defined.
+   - The trapezoidal area is consistent with modern land use (fields, clearings), not with ancient enclosures or mounds.
+
+3) **Uncertainty**:
+   - All images are clear and co-registered; no significant noise or ambiguity.
+
+**Conclusion**: The features are fully explained by modern roads and agricultural fields. No clear evidence of a man-made archaeological earth structure is visible."
+TAP_A03_2018_LAS_11,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: Shows a prominent straight linear feature running diagonally across both panels, with no clear evidence of closed or geometric earthworks. The rest of the surface is rough, with no distinct enclosures, mounds, or ditches visible.
+   - **Sentinel-1 SAR (VV)**: Displays a strong linear feature matching the LiDAR, with patchy, blocky textures elsewhere. No clear geometric or closed shapes are apparent.
+   - **Sentinel-2 true-color**: The linear feature corresponds to a road or track, with adjacent agricultural fields and some forested areas. No distinct archaeological earthworks are visible.
+
+2) **Reasoning**:
+   - The only clear, repeated feature across all images is a straight line, which aligns with a visible road or track in the true-color image. The pattern and context are consistent with modern infrastructure, not archaeological earthworks.
+   - No closed or linear geometric features are present that cannot be explained by roads, fields, or natural landforms.
+
+3) **Uncertainty**:
+   - All images are clear enough for interpretation. No significant noise or obscuration.
+
+**Conclusion**: No man-made earth structure of archaeological type is visible; the main feature is a modern road."
+TAP_A06_2008_laz_0,"[NO]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: There is a faint, broad, curvilinear depression or ridge visible in the left-central part of the tile, but it is diffuse and lacks clear, sharp boundaries or closed/linear geometry typical of man-made earthworks. The rest of the surface is irregular, with scattered small depressions likely corresponding to natural microtopography or vegetation gaps.
+   - **Sentinel-1 SAR (VV)**: The image is dominated by speckle noise, but no distinct linear or geometric features are visible that would correspond to the LiDAR anomaly. The texture is uniform, with no clear evidence of anthropogenic patterning.
+   - **Sentinel-2 true-color**: The area is uniformly green, suggesting continuous vegetation cover. There is a very faint, slightly lighter patch in the same area as the LiDAR anomaly, but it is not distinct or geometric.
+
+2) **Reasoning**:
+   - The faint curvilinear feature in the LiDAR could be a natural landform (e.g., a shallow swale or paleo-channel) rather than an enclosure, ditch, or mound. It lacks the sharp, regular, or closed geometry expected of archaeological earthworks.
+   - The absence of a corresponding clear feature in the SAR and only a very subtle, non-geometric tonal variation in the Sentinel-2 image further weakens the case for a man-made structure.
+   - No evidence of rectilinear, circular, or otherwise regular shapes that would exclude natural or modern agricultural causes.
+
+3) **Uncertainty**:
+   - Uncertain on **Sentinel-1** due to high speckle noise, but even so, no supporting geometric feature is visible.
+   - All images are interpretable, but none show a clear, repeated, geometric anomaly.
+
+**Conclusion**: No clear man-made earth structure is visible in at least two images with the required geometry. The observed features are more consistent with natural microtopography or vegetation variation."
+TAP_A06_2018_LAS_0,"[YES]
+
+1) **Observation**:
+   - **LiDAR hillshade composite**: Both sun angles reveal a distinct, large, nearly circular/oval embanked feature with a continuous, closed geometry. The edges are smooth and regular, not jagged or irregular as with natural erosion. The feature is clearly elevated or depressed relative to the surrounding terrain.
+   - **Sentinel-1 SAR (VV)**: There is a faint but discernible circular pattern in the same location as the LiDAR feature, indicating a difference in surface roughness or moisture retention along the same geometry.
+   - **Sentinel-2 true-color**: The area is uniformly vegetated (green), but there is a very subtle, slightly lighter arc in the vegetation corresponding to the upper left of the circular feature, suggesting a difference in vegetation health or soil beneath.
+
+2) **Reasoning**:
+   - The closed, regular, and large-scale geometry seen in both LiDAR and SAR is inconsistent with natural erosion, which typically produces irregular, branching, or linear features. The feature is not straight or angular like a modern road or field boundary, nor does it show the rectilinear patterns of modern agriculture.
+   - The presence of the same geometry in both LiDAR (topography) and SAR (surface/soil/vegetation response) confirms it is not an artifact of a single sensor or processing method.
+   - The faint vegetation mark in Sentinel-2, while subtle, aligns with the LiDAR/SAR feature, further supporting its presence and suggesting a buried or low-relief structure affecting plant growth.
+
+3) **Uncertainty**:
+   - The SAR image is somewhat noisy, but the circular pattern is still visible and aligns with the LiDAR. The Sentinel-2 signal is faint, but not absent. No major uncertainty that would default to NO.
+
+**Conclusion**: The feature meets the criteria for a man-made earth structure (likely an enclosure or mound) visible in at least two independent datasets, with geometry and context inconsistent with modern or natural causes."
+TAP_A06_2018_LAS_2,"[YES]
+
+1) **Observation**:
+- **LiDAR hillshade**: A faint but distinct sub-circular/oval raised feature is visible near the center, with a partial enclosure-like geometry. The edges are smoother and more regular than typical natural erosion.
+- **Sentinel-1 SAR (VV)**: The same sub-circular pattern is weakly echoed as a subtle contrast in backscatter, matching the LiDAR location and shape.
+- **Sentinel-2 true-color**: There is a slight discoloration or vegetation difference in the same area, forming a partial arc, though it is faint.
+
+2) **Reasoning**:
+- The feature is visible in both LiDAR and SAR, with a matching geometry and location, indicating a real ground structure rather than sensor noise.
+- The closed/curved geometry is inconsistent with linear roads or field boundaries, and the regularity is not typical of natural erosion (which would be more irregular or linear along slope).
+- The faint vegetation mark in Sentinel-2 further supports the presence of a subsurface or low-relief feature affecting plant growth.
+
+3) **Uncertainty**:
+- The SAR image is somewhat noisy, but the pattern is still discernible and matches the LiDAR.
+- The Sentinel-2 signal is weak, but not absent.
+
+**Conclusion**: The presence of a closed/curved earthwork visible in at least two independent sensors, with geometry inconsistent with modern or natural features, supports a [YES] for a man-made archaeological structure."
